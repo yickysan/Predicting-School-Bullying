@@ -10,9 +10,9 @@ def get_requirements(path:str)->List[str]:
 
     with open(path, "r") as f:
         requirements = f.readlines()
-        requirements = [req.replace("\m", "") for req in requirements]
+        requirements = [req.replace("\n", "") for req in requirements]
 
-        if "-e ." in requirements:
+        if "e ." in requirements:
             requirements.remove("-e .")
 
     return requirements
