@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="static/style.css">
+
+    
+    <title>Predict Bullying</title>
+    
+</head>
+<body>
+  <h1>Find Out If Your Student Is Being Bullied</h1>
+  <div class= "container">
+    <form action="{{url_for('predict')}}" method="POST">
+    <h5>Were They Bullied outside school?</h5>
+    <div class="select-container">
+      <select class="selection-box" name="bullied_not_school">
+        <option value="">Select An Option</option>
+        <option value="Yes">Yes</option>
+        <option value="No">No</option>
+      </select>
+    </div>
+    <br>
+
+    <h5>Were They Cyberbullied?</h5>
+    <div class="select-container">
+      <select class="selection-box" name="cyber_bullied">
+        <option value="">Select An Option</option>
+        <option value="Yes">Yes</option>
+        <option value="No">No</option>
+      </select>
+    </div>
+    <br>
+
+    <h5>How Old Are They?</h5>
+    <div class="select-container">
+      <select class="selection-box" name="custom_age">
+        <option value="">Select An Option</option>
+        <option value="11 years old or younger">11 years old or less</option>
+        <option value="12 years old">12 years old</option>
+        <option value="13 years old">13 years old</option>
+        <option value="14 years old">14 years old</option>
+        <option value="15 years old">15 years old </option>
+        <option value="16 years old">16 years old</option>
+        <option value="17 years old">17 years old</option>
+        <option value="18 years old or older">18 years old or more</option>
+      </select>
+    </div>
+    <br>
+
+    <h5>What Is Their Sex?</h5>
+    <div class="select-container">
+      <select class="selection-box" name="sex">
+        <option value="">Select An Option</option>
+        <option value="Female">Female</option>
+        <option value="Male">Male</option>
+      </select>
+    </div>
+    <br>
+
+    <h5>How Many Close Friends Do They Have?</h5>
+    <div class="select-container">
+      <select class="selection-box" name="close_friends">
+        <option value="">Select An Option</option>
+        <option value="0">None</option>
+        <option value="1">One</option>
+        <option value="2">Two</option>
+        <option value="3 or more">Three or more</option>
+      </select>
+    </div>
+    <br>
+
+    <h5>How Many Times Did They Miss School?</h5>
+    <div class="select-container">
+      <select class="selection-box" name="missed_school">
+        <option value="">Select An Option</option>
+        <option value="0 days">None</option>
+        <option value="1 or 2 days">One or two days</option>
+        <option value="3 to 5 days">Three to five days</option>
+        <option value="6 to 9 days">Six to mine days</option>
+        <option value="10 or more days">Ten or more days</option>
+      </select>
+    </div>
+    <br>
+
+    <h5>Were They Physically Attacked?</h5>
+    <div class="select-container">
+      <select class="selection-box" name="physically_attacked">
+        <option value="">Select An Option</option>
+        <option value="0 times">No</option>
+        <option value="1 time">Once</option>
+        <option value="2 or 3 times">Two or three times</option>
+        <option value="4 or 5 times">Four or five times</option>
+        <option value="6 or 7 times">Six or seven times</option>
+        <option value="8 or 9 times">Eight or nine times</option>
+        <option value="10 or 11 times">Ten or eleven times</option>
+        <option value="12 or more times">Twelve times or more</option>
+      </select>
+    </div>
+    <br>
+
+    <h5>Were They In a Physical Fight?</h5>
+    <div class="select-container">
+      <select class="selection-box" name="physical_fighting">
+        <option value="">Select An Option</option>
+        <option value="0 times">No</option>
+        <option value="1 time">Once</option>
+        <option value="2 or 3 times">Two or three times</option>
+        <option value="4 or 5 times">Four or five times</option>
+        <option value="6 or 7 times">Six or seven times</option>
+        <option value="8 or 9 times">Eight or nine times</option>
+        <option value="10 or 11 times">Ten or eleven times</option>
+        <option value="12 or more times">Twelve times or more</option>
+      </select>
+    </div>
+    <br>
+
+    <h5>Did They Feel Lonely?</h5>
+    <div class="select-container">
+      <select class="selection-box" name="felt_lonely">
+        <option value="">Select An Option</option>
+        <option value="Never">Never</option>
+        <option value="Rarely">Rarely</option>
+        <option value="Sometimes">Sometimes</option>
+        <option value="Most of the time">Most of the time</option>
+        <option value="Always">Always</option>
+      </select>
+    </div>
+    <br>
+
+    <h5>Did They Think Other Students Were Kind And Helpful?</h5>
+    <div class="select-container">
+      <select class="selection-box" name="other_students_kind_and_helpful">
+        <option value="">Select An Option</option>
+        <option value="Never">Never</option>
+        <option value="Rarely">Rarely</option>
+        <option value="Sometimes">Sometimes</option>
+        <option value="Most of the time">Most of the time</option>
+        <option value="Always">Always</option>
+      </select>
+    </div>
+    <br>
+
+    <h5>Did They Think Their Parents Understand Their Problems?</h5>
+    <div class="select-container">
+      <select class="selection-box" name="parents_understand_problems">
+        <option value="">Select An Option</option>
+        <option value="Never">Never</option>
+        <option value="Rarely">Rarely</option>
+        <option value="Sometimes">Sometimes</option>
+        <option value="Most of the time">Most of the time</option>
+        <option value="Always">Always</option>
+      </select>
+    </div>
+    <br>
+
+    <input type="submit" value="Submit" class="btn">
+  </form>
+  </div>
+    
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    
+</body>
+</html>

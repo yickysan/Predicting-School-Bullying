@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- CSS style-->
+
+    <link rel="stylesheet" type="text/css" href="static/style.css">
+
+    
+    <title>Predict Bullying</title>
+    
+</head>
+<body>
+<div class="table-container">
+    <div class="data-table">
+        {% for table in tables %}
+            {{table|safe}}
+        {% endfor %}
+    </div>
+</div>
+<br>
+<h2> {{result}}</h2>
+<br>
+<br>
+<div> 
+    <h3>NOTE:</h3>
+    <h3>The model used for predictions is an xgboost model which has a 74% accuracy, a recall score of 67% and a precision score of 43%.</h3>
+</div>
+
+    
+</body>
+</html>

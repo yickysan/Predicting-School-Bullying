@@ -3,8 +3,10 @@ import os
 from dataclasses import dataclass 
 import pandas as pd
 import numpy as np
+from sklearn.preprocessing import OneHotEncoder
+from sklearn.compose import ColumnTransformer
 
-from src.utils import preprocessor, save_object
+from src.utils import save_object
 from src.exception import CustomException
 from src.logger import logging
 
@@ -19,22 +21,20 @@ class DataTransformation:
     def get_data_transformer_object(self):
         try:
             
-            cat_columns = ["bullied_not_school", "cyber_bullied", "sex",
-                            "physically_attacked", "physical_fighting", "felt_lonely",
-                            "other_students_kind_and_helpful", "parents_understand_problems"
-                            ]
+            cat_columns = ["bullied_not_school", "cyber_bullied", "custom_age", 
+                           "sex","physically_attacked", "physical_fighting", 
+                           "felt_lonely","close_friends", "missed_school",
+                           "other_students_kind_and_helpful", "parents_understand_problems"]
             
-            num_columns = ["custom_age", "close_friends", "missed_school"]
             
             logging.info(f"Categorical columns: {cat_columns}")
-            logging.info(f"Numerical Columns: {num_columns}")
 
-            preprocessor_fn = preprocessor
+            ohe = OneHotEncoder(sparse_output=False)
+            preprocessor = ColumnTransformer([
+                ("cat", ohe, cat_columns)
+                ])
 
-            return (preprocessor_fn,
-                    cat_columns,
-                    num_columns
-            )
+            return preprocessor
         except Exception as e:
             raise CustomException(e, sys)
 
@@ -47,8 +47,7 @@ class DataTransformation:
 
             logging.info("Initiating preprocessor object.")
             
-            preprocessing_obj = self.get_data_transformer_object()
-            preprocessing_fn, cat_cols, num_cols = preprocessing_obj # unpack preprocesing_obj
+            preprocessor = self.get_data_transformer_object()
             
 
             target = "bullied_in_school"
@@ -60,12 +59,8 @@ class DataTransformation:
 
             logging.info("Applying preprocessing on the train and test dataset")
 
-            train_feature_arr = preprocessing_fn(data=train_feature_df,
-                                                 cat_columns=cat_cols,
-                                                 num_columns=num_cols )
-            test_feature_arr = preprocessing_fn(data=test_feature_df,
-                                                cat_columns=cat_cols,
-                                                num_columns=num_cols)
+            train_feature_arr = preprocessor.fit_transform(train_feature_df)
+            test_feature_arr = preprocessor.transform(test_feature_df)
 
             train_arr = np.c_[
                 train_feature_arr, np.array(train_target)
@@ -80,7 +75,7 @@ class DataTransformation:
 
             save_object(
                 file_path = self.data_transformation_config.preprocessor_obj_file_path,
-                obj = preprocessing_obj
+                obj = preprocessor
             )
             
             return (

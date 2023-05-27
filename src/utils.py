@@ -24,28 +24,7 @@ def clean_data(data):
     except Exception as e:
         raise CustomException(e, sys)
     
-
-def preprocessor(data, cat_columns, num_columns):
-    """
-    Function to perform preprocessing on the dataset.
-    """
-    try:
-        data = data.copy()[cat_columns + num_columns]
-        # convert numerical columns into integer
-        for col in num_columns:
-            data[col] = data[col].str.extract("(\d+)").astype(int)
-
-
-        # convert categorical columns into category data type
-        for col in cat_columns:
-            data[col] = data[col].astype("category").cat.codes
-
-        return data.values
-    
-    except Exception as e:
-        raise CustomException(e, sys)
-    
-    
+       
 def save_object(file_path, obj):
     """
     Function to create and save pickle files.
@@ -78,3 +57,13 @@ def evaluate_models(X_train, y_train, X_test, y_test, models):
     
     except Exception as e:
         raise CustomException(e, sys)
+    
+
+def load_object(file_path):
+    try:
+        with open(file_path, "rb") as f:
+            return dill.load(f)
+        
+    except Exception as e:
+        raise CustomException(e, sys)
+        
