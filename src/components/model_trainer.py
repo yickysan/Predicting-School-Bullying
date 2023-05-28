@@ -4,6 +4,7 @@ from dataclasses import dataclass
 
 import numpy as np
 from xgboost import XGBClassifier
+from sklearn.svm import SVC
 from sklearn.metrics import roc_auc_score, confusion_matrix, recall_score, accuracy_score, precision_score
 
 from src.exception import CustomException
@@ -29,19 +30,14 @@ class ModelTrainer:
             )
 
             # From the model evaluation done on the data set on the model_training notebook,
-            # The logistic regression model and the xgboost model were the two best models.
-            # After hyperparemeter tuning, the xgboost model was the best of the two.
-            # The xgboost model with the required parameters will be used to fit the data
+            # The SVC, logistic regression model and the xgboost model were the two best models.
+            # After hyperparemeter tuning, the xgboost model edged out the logistic regression model
+            # but fell short of the SVC model.
+            # The SVC will be used to fit the data
 
             logging.info("initialising best model")
 
-            counts = np.unique(y_train, return_counts=True)[-1]
-            scale_pos_weight = counts[0]/counts[1]
-
-            model = XGBClassifier(
-                max_depth=5, min_child_weight=1, learning_rate=0.08,
-                gamma=0.0, reg_alpha=0.1, subsample=0.75, scale_pos_weight=scale_pos_weight
-            )
+            model = SVC(class_weight="balanced", random_state=1)
             
             model.fit(X_train, y_train)
 

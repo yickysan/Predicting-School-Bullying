@@ -6,4 +6,7 @@ scikit-learn
 xgboost
 imbalanced-learn
 dill
+flask
+flask-wtf
+shap
 -e .
