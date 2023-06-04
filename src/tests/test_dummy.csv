@@ -1,0 +1,101 @@
+record,bullied_in_school,bullied_not_school,cyber_bullied,custom_age,sex,physically_attacked,physical_fighting,felt_lonely,close_friends,missed_school,other_students_kind_and_helpful,parents_understand_problems,most_of_the_time_or_always_felt_lonely,missed_classes,were_underweight,were_overweight,were_obese
+1,Yes,Yes,,13 years old,Female,0 times,0 times,Always,2,10 or more days,Never,Always,Yes,Yes,,,
+2,No,No,No,13 years old,Female,0 times,0 times,Never,3 or more,0 days,Sometimes,Always,No,No,,,
+3,No,No,No,14 years old,Male,0 times,0 times,Never,3 or more,0 days,Sometimes,Always,No,No,No,No,No
+4,No,No,No,16 years old,Male,0 times,2 or 3 times,Never,3 or more,0 days,Sometimes,,No,No,No,No,No
+5,No,No,No,13 years old,Female,0 times,0 times,Rarely,3 or more,0 days,Most of the time,Most of the time,No,No,,,
+6,No,No,No,13 years old,Male,0 times,1 time,Never,3 or more,0 days,Most of the time,Always,No,No,No,No,No
+7,No,No,No,14 years old,Female,1 time,0 times,Sometimes,3 or more,0 days,Most of the time,Always,No,No,,,
+8,No,No,No,12 years old,Female,0 times,0 times,Rarely,3 or more,0 days,Most of the time,Never,No,No,,,
+9,No,No,No,13 years old,Male,1 time,2 or 3 times,Never,3 or more,6 to 9 days,Most of the time,Most of the time,No,Yes,,,
+10,Yes,No,No,14 years old,Female,0 times,0 times,Always,0,0 days,Sometimes,Never,Yes,No,,,
+11,No,No,No,15 years old,Male,0 times,1 time,Never,3 or more,3 to 5 days,Most of the time,Always,No,Yes,No,No,No
+12,Yes,Yes,Yes,13 years old,Female,12 or more times,1 time,Sometimes,3 or more,0 days,Never,Always,No,No,,,
+13,No,No,No,13 years old,Female,0 times,0 times,Sometimes,3 or more,0 days,Sometimes,Never,No,No,,,
+14,No,No,No,14 years old,Female,0 times,0 times,Rarely,3 or more,0 days,,,No,No,No,No,No
+15,No,No,No,14 years old,Female,0 times,0 times,Most of the time,3 or more,,Sometimes,Never,Yes,,No,No,No
+16,No,No,No,13 years old,Female,0 times,1 time,Always,3 or more,0 days,Sometimes,Sometimes,Yes,No,,,
+17,No,No,No,11 years old or younger,Male,0 times,0 times,Never,3 or more,0 days,Always,Never,No,No,,,
+18,No,No,No,13 years old,Male,0 times,0 times,Never,0,1 or 2 days,Sometimes,,No,Yes,,,
+19,Yes,Yes,Yes,14 years old,Female,0 times,0 times,Rarely,3 or more,0 days,Rarely,Most of the time,No,No,,,
+20,No,No,No,13 years old,Male,0 times,0 times,Never,3 or more,0 days,Never,Never,No,No,,,
+21,No,No,No,13 years old,Female,0 times,0 times,Sometimes,3 or more,0 days,Most of the time,Always,No,No,,,
+22,,No,No,14 years old,Male,0 times,0 times,Never,2,0 days,Rarely,Never,No,No,,,
+23,No,No,Yes,13 years old,Male,0 times,2 or 3 times,Most of the time,3 or more,0 days,Rarely,Always,Yes,No,No,No,No
+24,No,No,No,14 years old,Male,0 times,2 or 3 times,Most of the time,2,0 days,Always,Sometimes,Yes,No,No,Yes,Yes
+25,No,No,No,13 years old,Male,0 times,1 time,Never,3 or more,,Sometimes,Never,No,,,,
+26,No,No,No,13 years old,Female,0 times,0 times,Sometimes,0,0 days,Rarely,Sometimes,No,No,,,
+27,No,No,No,13 years old,Male,0 times,1 time,Never,3 or more,0 days,Most of the time,Most of the time,No,No,,,
+28,No,No,No,14 years old,Female,1 time,4 or 5 times,Always,3 or more,3 to 5 days,Always,Always,Yes,Yes,,,
+29,No,No,No,14 years old,Male,0 times,2 or 3 times,,3 or more,0 days,Rarely,Always,,No,No,No,No
+30,Yes,No,No,13 years old,Male,0 times,0 times,Rarely,2,0 days,Sometimes,,No,No,,,
+31,No,No,No,13 years old,Female,0 times,1 time,Rarely,3 or more,,,,No,,,,
+32,No,No,No,13 years old,Female,0 times,0 times,Never,3 or more,0 days,Most of the time,Always,No,No,No,No,No
+33,Yes,Yes,Yes,14 years old,Female,1 time,0 times,Sometimes,,3 to 5 days,Sometimes,,No,Yes,No,No,No
+34,No,No,No,14 years old,Female,0 times,0 times,Never,3 or more,0 days,Always,Always,No,No,No,No,No
+35,Yes,No,Yes,14 years old,Female,0 times,0 times,Most of the time,2,3 to 5 days,Rarely,Sometimes,Yes,Yes,,,
+36,No,No,No,14 years old,Male,12 or more times,6 or 7 times,Never,3 or more,3 to 5 days,Always,Never,No,Yes,,,
+37,No,No,No,13 years old,Female,0 times,0 times,Rarely,1,0 days,Rarely,Always,No,No,,,
+38,No,No,No,13 years old,Male,0 times,8 or 9 times,Rarely,3 or more,10 or more days,Always,Rarely,No,Yes,No,No,No
+39,Yes,No,No,14 years old,Female,0 times,0 times,Most of the time,3 or more,,,,Yes,,,,
+40,No,No,Yes,13 years old,Female,0 times,1 time,Rarely,3 or more,0 days,Most of the time,Most of the time,No,No,No,No,No
+41,Yes,Yes,Yes,13 years old,Female,4 or 5 times,0 times,Most of the time,3 or more,,,,Yes,,No,Yes,No
+42,Yes,No,Yes,13 years old,Male,0 times,1 time,Rarely,3 or more,0 days,Most of the time,Most of the time,No,No,No,Yes,No
+43,Yes,No,No,15 years old,Male,1 time,0 times,Never,3 or more,0 days,Never,Sometimes,No,No,No,No,No
+44,No,No,No,14 years old,Female,1 time,0 times,Never,3 or more,1 or 2 days,Always,Always,No,Yes,No,Yes,No
+45,,No,No,16 years old,Female,0 times,0 times,Rarely,3 or more,,,,No,,,,
+46,Yes,No,No,13 years old,Female,0 times,0 times,Sometimes,3 or more,0 days,Rarely,Always,No,No,No,No,No
+47,No,No,No,13 years old,Male,0 times,0 times,Never,3 or more,0 days,Never,Always,No,No,,,
+48,No,No,No,15 years old,Female,1 time,0 times,Sometimes,3 or more,0 days,Sometimes,Always,No,No,No,No,No
+49,No,No,Yes,14 years old,Female,0 times,0 times,Rarely,3 or more,0 days,Sometimes,Sometimes,No,No,No,No,No
+50,No,No,No,16 years old,Male,0 times,0 times,Rarely,3 or more,0 days,Sometimes,Always,No,No,No,No,No
+51,No,No,No,16 years old,Male,0 times,0 times,Never,3 or more,0 days,Most of the time,Sometimes,No,No,No,No,No
+52,No,Yes,Yes,14 years old,Female,0 times,1 time,Sometimes,3 or more,0 days,Never,Never,No,No,,,
+53,No,Yes,Yes,14 years old,Female,0 times,2 or 3 times,Rarely,3 or more,1 or 2 days,Sometimes,Most of the time,No,Yes,No,Yes,No
+54,Yes,No,No,15 years old,Male,2 or 3 times,1 time,Rarely,3 or more,1 or 2 days,Most of the time,Always,No,Yes,,,
+55,No,Yes,Yes,16 years old,Male,4 or 5 times,2 or 3 times,Most of the time,0,10 or more days,Sometimes,Always,Yes,Yes,No,No,No
+56,Yes,Yes,Yes,14 years old,Female,2 or 3 times,0 times,Never,3 or more,0 days,Rarely,Always,No,No,,,
+57,No,No,No,15 years old,Male,0 times,0 times,Rarely,3 or more,0 days,Rarely,Rarely,No,No,Yes,No,No
+58,No,No,No,15 years old,Male,0 times,4 or 5 times,Rarely,3 or more,0 days,Most of the time,Always,No,No,No,No,No
+59,No,No,No,16 years old,Male,0 times,2 or 3 times,Never,3 or more,10 or more days,Most of the time,Always,No,Yes,No,No,No
+60,Yes,No,No,15 years old,Female,0 times,0 times,Rarely,3 or more,0 days,Most of the time,Sometimes,No,No,No,No,No
+61,No,No,Yes,15 years old,Female,0 times,0 times,Always,3 or more,0 days,Sometimes,Most of the time,Yes,No,No,No,No
+62,No,No,No,15 years old,Female,0 times,0 times,Sometimes,3 or more,0 days,Most of the time,Sometimes,No,No,No,No,No
+63,No,No,No,15 years old,Female,0 times,1 time,Sometimes,1,1 or 2 days,Rarely,Sometimes,No,Yes,,,
+64,No,No,No,15 years old,Female,0 times,0 times,Never,3 or more,0 days,Rarely,Rarely,No,No,,,
+65,No,Yes,No,16 years old,Female,0 times,0 times,Most of the time,3 or more,0 days,Most of the time,Always,Yes,No,No,Yes,No
+66,No,No,Yes,14 years old,Female,0 times,0 times,Rarely,,1 or 2 days,Most of the time,Always,No,Yes,,,
+67,No,No,No,14 years old,Female,0 times,0 times,Never,3 or more,0 days,Always,Always,No,No,No,No,No
+68,No,No,Yes,14 years old,Male,0 times,10 or 11 times,Rarely,,6 to 9 days,Sometimes,Never,No,Yes,No,No,No
+69,,No,No,16 years old,Female,0 times,0 times,Always,0,0 days,Rarely,Never,Yes,No,No,No,No
+70,No,No,No,15 years old,Female,0 times,0 times,Sometimes,3 or more,0 days,Sometimes,Always,No,No,No,Yes,Yes
+71,No,No,No,14 years old,Male,2 or 3 times,2 or 3 times,,,6 to 9 days,Always,Rarely,,Yes,,,
+72,Yes,Yes,No,15 years old,Male,0 times,0 times,Most of the time,3 or more,0 days,Sometimes,,Yes,No,No,No,No
+73,No,No,Yes,16 years old,Male,0 times,1 time,Sometimes,,0 days,Sometimes,Sometimes,No,No,,,
+74,No,No,No,16 years old,Male,0 times,0 times,Never,2,0 days,Most of the time,Always,No,No,No,No,No
+75,No,No,No,14 years old,Male,0 times,1 time,,2,0 days,Rarely,Always,,No,,,
+76,No,No,No,16 years old,Female,0 times,0 times,Sometimes,2,0 days,Sometimes,Sometimes,No,No,No,No,No
+77,No,No,No,15 years old,Female,0 times,0 times,Never,3 or more,0 days,Always,Sometimes,No,No,No,No,No
+78,No,Yes,Yes,14 years old,Female,0 times,0 times,Always,3 or more,1 or 2 days,Rarely,Rarely,Yes,Yes,No,No,No
+79,No,No,Yes,15 years old,Male,0 times,0 times,Always,3 or more,0 days,Always,Never,Yes,No,No,No,No
+80,No,No,No,17 years old,Female,0 times,0 times,Never,3 or more,0 days,Always,Never,No,No,No,No,No
+81,No,No,No,16 years old,Male,0 times,0 times,Sometimes,3 or more,0 days,Most of the time,Sometimes,No,No,No,No,No
+82,No,No,No,15 years old,Female,0 times,0 times,Sometimes,3 or more,0 days,Most of the time,Never,No,No,No,Yes,No
+83,Yes,Yes,No,17 years old,Male,0 times,0 times,Always,1,0 days,,Most of the time,Yes,No,No,No,No
+84,Yes,No,No,15 years old,Female,0 times,0 times,Rarely,3 or more,0 days,Never,Always,No,No,,,
+85,No,No,No,15 years old,Female,0 times,0 times,Rarely,3 or more,0 days,Sometimes,Sometimes,No,No,No,Yes,No
+86,No,Yes,Yes,14 years old,Female,0 times,1 time,Sometimes,3 or more,,,,No,,No,No,No
+87,Yes,No,No,16 years old,Male,0 times,0 times,Sometimes,1,1 or 2 days,Most of the time,Always,No,Yes,,,
+88,No,No,No,15 years old,Male,0 times,0 times,Rarely,3 or more,0 days,Rarely,Rarely,No,No,No,Yes,No
+89,No,No,No,15 years old,Female,0 times,0 times,Most of the time,1,0 days,Sometimes,Always,Yes,No,No,No,No
+90,No,No,Yes,15 years old,Male,0 times,0 times,Most of the time,3 or more,1 or 2 days,Sometimes,Never,Yes,Yes,,,
+91,No,No,No,16 years old,Female,1 time,0 times,Most of the time,2,0 days,Sometimes,Always,Yes,No,,,
+92,Yes,No,Yes,15 years old,Female,0 times,1 time,Never,2,0 days,Sometimes,Sometimes,No,No,,,
+93,No,No,No,15 years old,Female,0 times,0 times,Sometimes,3 or more,1 or 2 days,Sometimes,Rarely,No,Yes,,,
+94,No,No,No,15 years old,Female,0 times,0 times,Never,,0 days,,Sometimes,No,No,,,
+95,No,No,Yes,17 years old,Male,1 time,1 time,Sometimes,2,0 days,Sometimes,Most of the time,No,No,No,No,No
+96,No,No,No,15 years old,Female,0 times,0 times,Rarely,2,0 days,Rarely,,No,No,,,
+97,Yes,Yes,Yes,16 years old,Female,1 time,1 time,Sometimes,3 or more,0 days,Sometimes,Always,No,No,No,No,No
+98,No,No,No,16 years old,Female,0 times,0 times,Never,1,0 days,Never,Always,No,No,,,
+99,No,No,No,16 years old,Male,0 times,0 times,Sometimes,3 or more,0 days,Rarely,Most of the time,No,No,No,No,No
+100,No,No,No,16 years old,Male,0 times,0 times,Never,1,10 or more days,Rarely,Never,No,Yes,No,No,No
