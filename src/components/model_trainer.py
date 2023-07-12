@@ -13,13 +13,14 @@ from src.utils import save_object, evaluate_models
 
 @dataclass
 class ModelTrainerConfig:
-    model_file_path = os.path.join("artifacts", "model.pkl")
+    model_file_path : str = os.path.join("artifacts", "model.pkl")
 
 class ModelTrainer:
     def __init__(self):
         self.model_trainer_config = ModelTrainerConfig()
 
-    def initiate_model_trainer(self, train_arr, test_arr):
+    def initiate_model_trainer(self, train_arr: np.ndarray,
+                                test_arr: np.ndarray) -> tuple[float, float, float, np.ndarray]:
         try:
             logging.info("Splitting the training and test input data")
             X_train, y_train, X_test, y_test = (

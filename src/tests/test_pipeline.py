@@ -9,7 +9,7 @@ class TestPipeline:
 
     @staticmethod
     @pytest.fixture(scope="class")
-    def create_df():
+    def create_df() -> pd.DataFrame:
         make_df = MakePredictDF(
             bullied_not_school = "Yes",
             cyber_bullied= "Yes",
@@ -27,11 +27,11 @@ class TestPipeline:
         df = make_df.make_df()
         return df
 
-    def test_make_df(self, create_df):
+    def test_make_df(self, create_df: callable):
         assert type(create_df) == type(pd.DataFrame())
 
 
-    def test_predict_pipeline(self, create_df):
+    def test_predict_pipeline(self, create_df: callable):
         predict_pipeline = PredictPipeline()
         
         try:

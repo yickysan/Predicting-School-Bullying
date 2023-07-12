@@ -2,6 +2,7 @@ import pytest
 import os
 import sys
 import pandas as pd
+import numpy as np
 from sklearn.preprocessing import OneHotEncoder
 from src.components.data_ingestion import DataIngestion
 from src.components.data_transformation import DataTransformation
@@ -68,7 +69,7 @@ class TestComponents:
     def read_dummy_data():
         return pd.read_csv("src/tests/test_dummy.csv")
     
-    def test_clean_data(self, read_dummy_data):
+    def test_clean_data(self, read_dummy_data: callable):
         df = read_dummy_data
         clean_df = clean_data(df)
         for colname in ["were_obese", "were_underweight", "were_overweight"]:
@@ -78,7 +79,7 @@ class TestComponents:
         assert null_sum == 0
 
     
-    def test_data_ingestion(self, ingest):
+    def test_data_ingestion(self, ingest: callable):
         try:
             pd.read_csv(ingest.ingestion_config.train_data_path)
             pd.read_csv(ingest.ingestion_config.test_data_path)
@@ -89,7 +90,7 @@ class TestComponents:
 
 
     @pytest.fixture(scope="class")
-    def transform(self, ingest):
+    def transform(self, ingest: callable) -> tuple[np.ndarray, np.ndarray]:
         train_path = ingest.ingestion_config.train_data_path
         test_path = ingest.ingestion_config.test_data_path
 
@@ -103,7 +104,7 @@ class TestComponents:
 
         
 
-    def test_data_transformion(self, transform):
+    def test_data_transformion(self, transform: callable):
         train_arr, test_arr = transform
         
         assert type(train_arr) == type(test_arr)
@@ -111,7 +112,7 @@ class TestComponents:
 
     
     @pytest.fixture(scope="class")
-    def model_trainer(self, transform):
+    def model_trainer(self, transform: callable):
         train_arr, test_arr = transform
 
         model_trainer = ModelTrainer()
@@ -121,7 +122,7 @@ class TestComponents:
         auc_score, recall, _,_,_ = model_trainer.initiate_model_trainer(train_arr, test_arr)
         return auc_score, recall
 
-    def test_model_performance(self, model_trainer):
+    def test_model_performance(self, model_trainer: callable):
         auc_score, recall = model_trainer
         assert auc_score >= 0.65
         assert recall >= 0.60

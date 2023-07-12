@@ -8,7 +8,7 @@ from sklearn.metrics import roc_auc_score, confusion_matrix
 
 from src.exception import CustomException
 
-def clean_data(data):
+def clean_data(data: pd.DataFrame)-> pd.DataFrame:
     """
     Function to clean the dataset
     """
@@ -25,7 +25,7 @@ def clean_data(data):
         raise CustomException(e, sys)
     
        
-def save_object(file_path, obj):
+def save_object(file_path: str, obj: object):
     """
     Function to create and save pickle files.
     """
@@ -40,7 +40,8 @@ def save_object(file_path, obj):
         raise CustomException(e, sys)
 
 
-def evaluate_models(X_train, y_train, X_test, y_test, models):
+def evaluate_models(X_train: np.ndarray, y_train: np.ndarray,
+                     X_test: np.ndarray, y_test: np.ndarray, models: dict) -> dict:
     try:
         report = {}
         for k, v in models.items():
@@ -59,7 +60,7 @@ def evaluate_models(X_train, y_train, X_test, y_test, models):
         raise CustomException(e, sys)
     
 
-def load_object(file_path):
+def load_object(file_path: str) -> object:
     try:
         with open(file_path, "rb") as f:
             return dill.load(f)

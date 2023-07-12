@@ -38,7 +38,9 @@ class DataTransformation:
         except Exception as e:
             raise CustomException(e, sys)
 
-    def initiate_data_transformation(self, train_path, test_path):
+    def initiate_data_transformation(self, 
+                                     train_path: str, 
+                                     test_path: str) -> tuple[np.ndarray, np.ndarray, str]:
         try:
             train_df = pd.read_csv(train_path)
             test_df = pd.read_csv(test_path)
