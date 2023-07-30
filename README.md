@@ -33,3 +33,8 @@ The dataset is about school bullying and contains columns such as:
 ## Model
 The model trained on the data is a support vector machine classifier. 
 Due to the imbalance nature of the data, the performance was evaluated on `roc_auc_score`, `recall_score` and not just on the accuracy.
+
+## Web app
+The web app was built using Flask framework in the backend and was hosted on https://www.render.com
+
+You can visit the web app <a href="https://t.co/afn4AUcnvt">here</a>
